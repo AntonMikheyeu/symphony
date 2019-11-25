@@ -9,6 +9,6 @@ app.use(express.json())
   .use("/api/app1", app1Routes)
 
 app.listen(PORT, err => {
-  if(err) console.error(err);
+  if(err) return console.error(err);
   console.log(`main is runing on ${PORT}`);
 });

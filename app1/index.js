@@ -9,6 +9,6 @@ app.use(express.json())
   });
 
 app.listen(PORT, err => {
-  if(err) console.error(err);
+  if(err) return console.error(err);
   console.log(`app1 is runing on ${PORT}`);
 });
