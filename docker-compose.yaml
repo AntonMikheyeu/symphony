@@ -1,0 +1,14 @@
+version: "3.0"
+services:
+  main:
+    image: "main"
+    environment:
+      PORT: "3001"
+    ports:
+      - "3001:3001"
+  app1:
+    image: "app1"
+    environment:
+      PORT: "3002"
+    ports:
+      - "3002:3002"

@@ -1,0 +1,16 @@
+{
+  "name": "symphony",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build": "npm install && node set-ip.js && cd main && docker build -t main . && cd .. && cd app1 && docker build -t app1 .",
+    "start": "docker-compose up",
+    "stop": "docker rm $(docker ps -a -q)"
+  },
+  "author": "Anton Mikheyeu",
+  "license": "ISC",
+  "dependencies": {
+    "edit-json-file": "^1.3.2"
+  }
+}
